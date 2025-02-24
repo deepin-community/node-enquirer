@@ -1,5 +1,49 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-enquirer (2.3.6~ds-4) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-enquirer: Add :any qualifier for nodejs dependency.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 07 Dec 2022 23:35:20 +0000
+
+node-enquirer (2.3.6~ds-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+
+  [ Jonas Smedegaard ]
+  * update watch file:
+    + track tags (not releases)
+    + use substitution strings
+    + mention gbp --uscan in usage comment
+  * declare compliance with Debian Policy 4.6.0
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 09 Nov 2021 04:43:27 +0100
+
+node-enquirer (2.3.6~ds-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Jonas Smedegaard ]
+  * update git-buildpackage config: sign tags.
+  * use debhelper compatibility level 13 (not 12)
+
+  [ Kartik Kulkarni ]
+  * changed copyright year
+  * added CI for salsa
+
+  [ Xavier Guimard ]
+  * Make lintian happy
+  * Fix copyright
+  * Use dh-sequence-nodejs
+  * Add "Rules-Requires-Root: no"
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 04 Nov 2020 09:25:26 +0100
+
+node-enquirer (2.3.6~ds-1) unstable; urgency=medium
+
+  [ Kartik Kulkarni ]
+  * Initial release (Closes: #966665)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 07 Aug 2020 07:37:30 +0200

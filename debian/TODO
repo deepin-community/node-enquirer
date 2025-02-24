@@ -1,0 +1,2 @@
+* Check why node-typescript-types does not find type definitions
+   for the commented tests at test/types/test.ts

@@ -1,0 +1,31 @@
+Description: Removed typescript test cases
+ Upstream test uses typescript testing which errors out
+ while finding types for node modules.
+ Sufficient error logs is provided in the comments
+ at test/types/test.ts
+Author: Kartik Kulkarni <kartik.koolks@gmail.com>
+Forwarded: not-needed
+
+--- a/test/types/test.ts
++++ b/test/types/test.ts
+@@ -1,3 +1,15 @@
++/* Test removed due to errors while packaging for debian
++ * typescript fails to find types for node module
++
++***
++---relevant-errors----
++index.d.ts(1,30): error TS2307: Cannot find module 'events' or its corresponding type declarations.
++index.d.ts(15,11): error TS2503: Cannot find namespace 'NodeJS'.
++index.d.ts(16,12): error TS2503: Cannot find namespace 'NodeJS'.
++test/types/test.ts(202,10): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i @types/node`.
++test/types/test.ts(208,11): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i @types/node`.
++***
++
+ import * as Enquirer from '../..';
+ 
+ new Enquirer();
+@@ -207,3 +219,4 @@
+   message: '',
+   stdout: process.stdout
+ });
++*/
